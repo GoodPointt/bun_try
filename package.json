@@ -9,6 +9,7 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "node-html-parser": "^6.1.9"
+    "node-html-parser": "^6.1.9",
+    "serve-static-bun": "^0.5.3"
   }
 }

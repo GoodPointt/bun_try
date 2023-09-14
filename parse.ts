@@ -1,7 +1,7 @@
 import {parse} from 'node-html-parser'
 
 
-export const getGhPageTitle = async (ghLogin: string) => {
+export const getGhPageInfo = async (ghLogin: string) => {
   const webPage = await fetch(`https://github.com/${ghLogin}`).then(res => res.text())
   const html = parse(webPage)
   const fullname = html.querySelector('.vcard-fullname')?.text.trim()
